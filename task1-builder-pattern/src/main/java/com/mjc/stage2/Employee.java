@@ -70,5 +70,43 @@ public class Employee {
 
     public static class EmployeeBuilder {
         // Write your code here!
+        private Employee employee;
+
+        public EmployeeBuilder() {
+            this.employee = new Employee();
+        }
+        public EmployeeBuilder setName(String name) {
+            this.employee.setName(name);
+            return this;
+        }
+
+        public EmployeeBuilder setLastName(String lastName) {
+            this.employee.setLastName(lastName);
+            return this;
+        }
+
+        public EmployeeBuilder setPosition(String position) {
+            this.employee.setPosition(position);
+            return this;
+        }
+
+        public EmployeeBuilder setPhone(String phone) {
+            this.employee.setPhone(phone);
+            return this;
+        }
+
+        public EmployeeBuilder setEmail(String email) {
+            this.employee.setEmail(email);
+            return this;
+        }
+
+        public EmployeeBuilder setCarNumber(String carNumber) {
+            this.employee.setCarNumber(carNumber);
+            return this;
+        }
+
+        public Employee build() {
+            return this.employee;
+        }
     }
 }
